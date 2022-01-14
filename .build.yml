@@ -1,0 +1,24 @@
+image: archlinux
+shell: true
+sources:
+  - https://git.sr.ht/~tcarrio/git-mirror
+  - https://git.sr.ht/~tim-clifford/ErgoDash-R
+environment:
+  PROJECT_DIR: ErgoDash-R
+  GIT_TARGET_REPO: git@github.com:tim-clifford/ErgoDash-R.git
+secrets:
+  - 9ee7c8f6-f330-46d7-8339-574c3d774548
+tasks:
+  - add-warning: |
+      cd $PROJECT_DIR
+      git checkout master
+      echo "
+
+      | :exclamation:  | This is a mirror of [https://git.sr.ht/~tim-clifford/ErgoDash-R](https://git.sr.ht/~tim-clifford/ErgoDash-R). Please refrain from using GitHub's issue and PR system.  |
+      |----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+      " | cat - README.md | tee README.md >/dev/null
+      git commit -am "[builds.sr.ht] Add mirror warning to README.md"
+
+  - mirror: git-mirror/git-mirror.sh $PROJECT_DIR
+

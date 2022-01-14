@@ -1,6 +1,6 @@
 # ErgoDash-R
 
-![ErgoDash-R](https://github.com/tim-clifford/ErgoDash-R/blob/master/render/main.png)
+![ErgoDash-R](ErgoDash-R.jpg)
 
 # Changes from original ErgoDash
 
@@ -12,16 +12,19 @@
 
 # Parts
 
-[Parts List](https://github.com/tim-clifford/ErgoDash-R/tree/master/doc/shoplist.ods)
+[Parts List](doc/shoplist.ods)
 
 # Firmware
 
-The ErgoDash-R uses QMK for its firmware. It will need updating from the original ErgoDash firmware here:
-[QMK - ErgoDash directory](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodash)
-.  
+The ErgoDash-R uses QMK for its firmware. It will need updating from the
+original ErgoDash firmware here: [QMK - ErgoDash
+directory](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodash).
+I have a working configuration myself, and will get around to publishing it
+eventually.
 
 # Build Guide
 
-I will add a build guide once I have finished building mine! The original ErgoDash build guide is likely to be useful:
+The build is very similar to the original ErgoDash, but there are a few
+gotchas. I need to get around to writing these up.
 
 [ErgoDash Build Guide](https://github.com/omkbd/ErgoDash/blob/master/Doc/build-en.md)
